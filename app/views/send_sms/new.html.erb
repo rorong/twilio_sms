@@ -1,0 +1,7 @@
+
+<h1> Welcome To Home Page </h1>
+<%= form_for @send_sm, :url => { :action => "create" } do |f| %>
+  <%= f.text_field :sms %>
+  <%= f.submit %>
+<% end %>
+

@@ -1,0 +1,4 @@
+# development:
+#   TWILIO_ACCOUNT_SID:         'AC6a02f15490023d899838b3c04bee90b6'
+#   TWILIO_AUTH_TOKEN:          '810414b8ecb9eb7dc5bc6001cd39f71f'
+#   TWILIO_DEFAULT_PHONE:       '+19_167_133_582'
