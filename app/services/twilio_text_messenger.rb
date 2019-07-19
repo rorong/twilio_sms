@@ -9,13 +9,14 @@ class TwilioTextMessenger
   end
 
   def call
-    binding.pry
     account_sid = Rails.application.secrets.twilio_account_sid
     auth_token = Rails.application.secrets.twilio_auth_token
+    from=  Rails.application.secrets.from_phone_number
+    to =  Rails.application.secrets.to_phone_number
     client = Twilio::REST::Client.new(account_sid, auth_token)
     client.messages.create(
-      from: 19_167_133_582,
-      to: '+917060519836',
+      from: from,
+      to: to,
       body: message
     )
   end

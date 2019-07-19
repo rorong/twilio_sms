@@ -45,7 +45,9 @@ auth_token = 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'
   to: '+16105557069',
   body: 'Hey there!'
 )
-
+ In from you have to give twilio phone number.
+ In to you have to enter receiver phone number that
+ In Body you have your message
 Running / Development:
 rails s
 
