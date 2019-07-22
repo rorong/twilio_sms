@@ -26,28 +26,29 @@ You will need the following things properly installed on your computer.
 Go to "https://www.twilio.com" register on twilio for free.Once you have registerd you will have the  ACCOUNT SID,AUTH TOKEN and twilio phone number registered.
 
 # Setup Work
- create a file app/services/twillio_text_messangers.rb and now add the account sid ,auth token in it.
+ create a file app/services/twillio_text_messangers.rb and now add the account account_sid ,auth_token in it.
  Here is an example how:
 
 require 'twilio-ruby'
 
- # put your own credentials here
+Put your own credentials here
 account_sid = 'ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 auth_token = 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'
+twilio_phone_number = '+91xxxxxxxxxx'
 
-# set up a client to talk to the Twilio REST API
+Set up a client to talk to the Twilio REST API
 @client = Twilio::REST::Client.new (account_sid, auth_token)
 
 # Send an SMS
 
 @client.api.account.messages.create(
-  from: '+14159341234',
-  to: '+16105557069',
-  body: 'Hey there!'
+  from: '+1xxxxxxxxx',
+  to: '+1xxxxxxxxxxxxx',
+  body: 'message'
 )
- In from you have to give twilio phone number.
- In to you have to enter receiver phone number that
- In Body you have your message
+
+ You have to give twilio phone number, you also have to enter receiver phone number and in body you have your message.
+
 Running / Development:
 rails s
 
